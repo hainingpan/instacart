@@ -12,6 +12,7 @@ else:
     filelist=filename
 
 for file in filelist:
+    print('-'*10+file+'-'*10)
     with open(file, 'r') as f:
         html_doc = f.read()
     soup = BeautifulSoup(html_doc, 'html.parser')
